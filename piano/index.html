@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Piano</title>
+    <style>
+        .piano {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+        }
+
+        .key {
+            width: 50px;
+            height: 200px;
+            background-color: white;
+            border: 1px solid black;
+            margin: 0 5px;
+        }
+
+        .key:hover {
+            background-color: #ccc;
+        }
+
+        .key:active {
+            background-color: #aaa;
+        }
+
+        .black-key {
+            position: relative;
+            width: 30px;
+            height: 120px;
+            background-color: black;
+            margin: 0 -15px;
+            z-index: 1;
+        }
+
+        .black-key:hover {
+            background-color: #333;
+        }
+
+        .black-key:active {
+            background-color: #111;
+        }
+    </style>
+</head>
+<body>
+    <div class="piano">
+        <div class="key"></div>
+        <div class="black-key"></div>
+        <div class="key"></div>
+        <div class="black-key"></div>
+        <div class="key"></div>
+        <div class="black-key"></div>
+        <div class="key"></div>
+        <div class="black-key"></div>
+        <div class="key"></div>
+        <div class="black-key"></div>
+        <div class="key"></div>
+        <div class="black-key"></div>
+        <div class="key"></div>
+    </div>
+</body>
+</html>
